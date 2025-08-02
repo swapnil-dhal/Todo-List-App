@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">sd_devops</span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >linkedin</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">github</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar code ends -->
+
+    <div class="container-fluid mt-4" style="max-width: 600px">
+      <!-- Add Todo Form -->
+      <form id="todo-form" class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter a new todo..."
+          id="todo-input"
+          required
+        />
+        <button class="btn btn-primary" type="submit">Add</button>
+      </form>
+
+      <!-- Todo List -->
+      <ul class="list-group" id="todo-list">
+        <!-- Todo items will be injected here by JS -->
+      </ul>
+    </div>
+  </body>
+</html>
