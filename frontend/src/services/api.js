@@ -1,5 +1,5 @@
 // Dynamically choose base API URL depending on environment
-const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:3000";
+const API_BASE = "/api";
 
 export async function getTodos() {
   const res = await fetch(`${API_BASE}/todos`);

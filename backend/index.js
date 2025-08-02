@@ -8,7 +8,7 @@ app.use(cors());
 
 app.use(express.json());
 
-app.use("/todos", todoRoutes);
+app.use("/api/todos", todoRoutes);
 
 app.get("/", (req, res) => res.send("Todo Backend is running"));
 
